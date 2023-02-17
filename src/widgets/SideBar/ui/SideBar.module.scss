@@ -1,0 +1,13 @@
+.sideBar {
+    height: 100vh;
+    background-color: var(--sidebar-bg-color);
+    width: var(--sidebar-width);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 0 30px;
+
+    a {
+        margin-bottom: 30px;
+    }
+}
