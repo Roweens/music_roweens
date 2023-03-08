@@ -1,3 +1,4 @@
-import { MainPage } from '@/pagesLayer/MainPage';
+import { MainPage, getStaticProps } from '@/pagesLayer/MainPage';
 
+export { getStaticProps };
 export default MainPage;

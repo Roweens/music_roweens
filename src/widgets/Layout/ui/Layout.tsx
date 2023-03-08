@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react';
 import { SideBar } from '@/widgets/SideBar';
 import { Player } from '@/widgets/Player';
 import cls from './Layout.module.scss';
-import { UserMenu } from '@/widgets/UserMenu';
+import { Navbar } from '@/widgets/Navbar';
 
 interface LayoutProps {
     className?: string;
@@ -15,9 +15,11 @@ export const Layout: FC<LayoutProps> = (props) => {
 
     return (
         <div className={classNames(cls.layout, {}, [className])}>
-            <UserMenu username="Cognus" />
             <SideBar />
-            {children}
+            <div className={cls.content}>
+                <Navbar />
+                {children}
+            </div>
             <Player />
         </div>
     );

@@ -1,3 +1,3 @@
-import { MainPage } from './ui/MainPage';
+import { MainPage, getStaticProps } from './ui/MainPage';
 
-export { MainPage };
+export { MainPage, getStaticProps };

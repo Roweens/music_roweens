@@ -1,10 +1,13 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
-const portalRoot = document.getElementById('modals-root')!;
+export const Portal = ({ children, element }: { children: ReactNode, element?: HTMLElement }) => {
+    const ref = useRef<HTMLElement | null>(element || null);
 
-function Portal({ children }: { children: ReactNode }) {
-    return ReactDOM.createPortal(children, portalRoot);
-}
+    useEffect(() => {
+        ref.current = element || document.body;
+    }, [element]);
 
-export default Portal;
+    if (ref.current) return ReactDOM.createPortal(children, ref.current);
+    return null;
+};

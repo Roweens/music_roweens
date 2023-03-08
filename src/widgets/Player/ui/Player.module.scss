@@ -6,8 +6,8 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: var(--bg-color);
-    color: var(--primary-color);
+    background-color: var(--player-color);
+    color: var(--player-text-color);
     padding: 25px 35px;
 
     .chip {
@@ -25,9 +25,7 @@
         font-weight: 700;
     }
 
-    .album {
-        color: var(--secondary-color);
-    }
+
 
     .controls {
         width: 50%;
@@ -55,10 +53,9 @@
     }
 
     svg {
-        width: 40px;
-        height: 40px;
         cursor: pointer;
-        fill: white;
+        fill: var(--player-text-color);
+        stroke: var(--player-text-color);
     }
 
     input {

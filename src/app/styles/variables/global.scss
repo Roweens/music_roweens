@@ -1,4 +1,5 @@
 :root {
+    // fonts
     --font-family-primary: 'Lato', sans-serif;
     --font-size-m: 16px;
     --font-line-m: 24px;
@@ -6,6 +7,25 @@
     --font-size-l: 24px;
     --font-line-l: 32px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-primary);
-    --sidebar-width: 320px;
+    --font-size-xl: 32px;
+    --font-line-xl: 40px;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-primary);
+
+    //  sizes
+    --navbar-height: 85px;
+    --sidebar-width: 350px;
     --player-heigth: 85px;
+    --switch-small: 60px;
+    --switch-medium: 90px;
+    --switch-large: 120px;
+    --card-m : 150px;
+    --card-l: 190px;
+    --card-xl: 250px;
+
+    //  colors
+    --player-text-color: white;
+    --app-color: #29c944;
+    --error-color:#C41727;
+    --success-color:#1C9E07;
+    --overlay-color: rgba(0 0 0 / 60%);
 }

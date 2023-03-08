@@ -5,9 +5,11 @@ export default function Document() {
         <Html>
             <Head />
             <body>
+
                 <Main />
-                <div id="modals-root">12312</div>
+
                 <NextScript />
+
             </body>
         </Html>
     );

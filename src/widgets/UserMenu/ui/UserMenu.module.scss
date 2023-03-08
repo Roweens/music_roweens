@@ -1,7 +1,5 @@
 .dropDown {
-    position: fixed;
-    top: 2%;
-    right: 2%;
+    width: fit-content;
     color: var(--primary-color);
 
     .dropDownChip {
@@ -9,7 +7,7 @@
         align-items: center;
         justify-content: center;
         padding: 7px;
-        background-color: var(--sidebar-bg-color);
+        background-color: var(--secondary-bg-color);
         gap: 10px;
         cursor: pointer;
         border-radius: 20px;
@@ -27,9 +25,10 @@
     .dropDownList {
         margin-top: 10px;
         padding: 20px 20px 20px 14px;
-        background-color: var(--dropdown-bg-color);
+        background-color: var(--secondary-bg-color);
         border-radius: 20px;
         font: var(--font-m);
+        position: absolute;
 
         a,
         li {
@@ -41,6 +40,7 @@
 
             &:hover {
                 background-color: var(--dropdown-secondary-bg-color);
+                color: var(--secondary-bg-color)
             }
         }
     }

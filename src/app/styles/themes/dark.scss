@@ -1,9 +1,10 @@
-.dark {
+#dark {
     --bg-color: #1c1b1b;
-    --extra-bg-color: #29c944;
-    --dropdown-bg-color: #0e0e0e;
-    --dropdown-secondary-bg-color: #504d4d;
-    --sidebar-bg-color: #0e0e0e;
+    --secondary-bg-color:rgb(14 14 14 / 100%);
+    --secondary-bg-hover-color: rgb(14 14 14 / 40%);
     --primary-color: #fcfcfc;
     --secondary-color: #e6e4e4;
+    --player-color: #1c1b1b;
+    --dropdown-secondary-bg-color: #504d4d;
+    --shadow-color: rgb(230 240 229 / 25%);
 }

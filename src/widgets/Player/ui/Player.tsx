@@ -8,6 +8,7 @@ import PlayNext from '@/../../public/playNext.svg';
 import PlayBack from '@/../../public/playBack.svg';
 import Image from 'next/image';
 import cls from './Player.module.scss';
+import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/Button/Button';
 
 interface PlayerProps {
     className?: string;
@@ -28,13 +29,20 @@ export const Player: FC<PlayerProps> = (props) => {
             <div className={classNames(cls.controls)}>
                 <ul className={classNames(cls.controlsIcons)}>
                     <li>
-                        <PlayBack />
+                        <Button squared size={ButtonSize.EXTRA_LARGE} theme={ButtonTheme.CLEAN}>
+                            <PlayBack />
+                        </Button>
+
                     </li>
                     <li>
-                        <PlayIcon />
+                        <Button squared size={ButtonSize.EXTRA_LARGE} theme={ButtonTheme.CLEAN}>
+                            <PlayIcon />
+                        </Button>
                     </li>
                     <li>
-                        <PlayNext />
+                        <Button squared size={ButtonSize.EXTRA_LARGE} theme={ButtonTheme.CLEAN}>
+                            <PlayNext />
+                        </Button>
                     </li>
                 </ul>
                 <input
@@ -46,8 +54,12 @@ export const Player: FC<PlayerProps> = (props) => {
                 />
             </div>
             <div className={classNames(cls.volume)}>
-                <QueueIcon />
-                <VolumeIcon />
+                <Button squared size={ButtonSize.LARGE} theme={ButtonTheme.CLEAN}>
+                    <QueueIcon />
+                </Button>
+                <Button squared size={ButtonSize.LARGE} theme={ButtonTheme.CLEAN}>
+                    <VolumeIcon />
+                </Button>
                 <input type="range" min="0" max="100" step="10" />
             </div>
         </div>

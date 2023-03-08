@@ -1,0 +1,43 @@
+.TextWrapper{
+    .title{
+        font: var(--font-l)
+    }
+
+    .text{
+        font: var(--font-m)
+    }
+
+    .primary {
+        color: var(--primary-color);
+    }
+
+    .inverted{
+        color: var(--bg-color);
+    }
+
+    .app{
+        color: var(--app-color);
+    }
+
+    .error{
+        color: var(--error-color);
+    }
+
+    .success {
+        color: var(--success-color);
+    }
+}
+
+
+
+.left{
+    text-align: start;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: end;
+}
